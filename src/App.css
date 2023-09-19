@@ -1,0 +1,64 @@
+.fp-bg{
+    background-image: url('./assets/images/bg-fp.jpg');
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.bg-dark{
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.bg-dark::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .3;
+    z-index: -1;
+    border-radius: inherit;
+}
+.btn-primary{
+    background-color: rgb(96, 165, 250);
+    padding: .5rem 1rem;
+    border-radius: 7px;
+    font-weight: 600;
+}
+.btn-secondary{
+    background-color: rgb(55, 65, 81);
+    padding: .5rem 1rem;
+    border-radius: 7px;
+}
+.text-main{
+    background-color: inherit;
+    font-size: xx-large;
+    font-weight: 600;
+}
+.text-secondary{
+    background-color: inherit;
+    font-size: medium;
+}
+.bg{
+    background-size: cover;
+    background-position: center; 
+}
+.bg-one{
+    background-image: url('./assets/images/card-bg-one.jpg');
+}
+.bg-two{
+    background-image: url('./assets/images/card-bg-two.jpg');
+}
+.bg-three{
+    background-image: url('./assets/images/card-bg-three.jpg');
+}
+.bg-four{
+    background-image: url('./assets/images/card-bg-four.jpg');
+}
+.bg-five{
+    background-image: url('./assets/images/card-bg-five.jpg');
+}
