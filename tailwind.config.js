@@ -9,10 +9,13 @@ export default {
     extend: {
       // background: linear-gradient(270deg, #903AFF 0%, #FE34B9 100%);
       colors: {
-        'lightPurple': '#903AFF',
+        'lightPurple': '#D434FE',
         'darkPurple': '#903AFF',
         'darkBlue': '#150E28',
       },
+      fontFamily:{
+        clashDisplay: ["clash-display"]
+      }
     },
   },
   plugins: [],

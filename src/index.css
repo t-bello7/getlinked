@@ -1,16 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*{
-    margin: 0; box-sizing: border-box; padding: 0;
-    /* background-color: rgb(19, 18, 18); */
-    /* color: rgb(241, 237, 237); */
-    font-family: 'Poppins', sans-serif;
-    transition: .3s all ease;
+
+@font-face {
+    font-family: "clash-display";
+    src: url("./assets/fonts/ClashDisplay-Regular.otf");
 }
-/* 
-.dark {
-    @apply bg-gray-800 text-zinc-50
-}
-  
-   */
