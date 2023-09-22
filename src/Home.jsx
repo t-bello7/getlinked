@@ -77,9 +77,9 @@ const HomePage = () => {
     <div ref={containerRef} className='relative bg-darkerColor text-lg overflow-scroll'>
       <Navbar teamSectionRef={teamSectionRef} />
       <Jumbotron innerRef={jumbotronRef} />
-      <CampaignSection innerRef={campaignSectionRef} />
+      {/* <CampaignSection innerRef={campaignSectionRef} />
       <TeamSection innerRef={teamSectionRef}/>
-      <Footer />
+      <Footer /> */}
     </div>
   )
 }

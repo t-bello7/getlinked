@@ -1,10 +1,11 @@
 const Button = ({
-    bgColor='primaryColor',
+    bgColor='lightPurple',
     color="white",
     name,
     variant="button",
     iconPath="",
-    defaultStyle="cursor-pointer"
+    defaultStyle="cursor-pointer",
+    extraStyle
     }) => {
         switch (variant) {
             case "icon":
@@ -15,7 +16,7 @@ const Button = ({
 
             default:
                 return (
-            <button className={`bg-${bgColor} text-${color} py-2 px-4 rounded hover:bg-blue-300`}>
+            <button className={`bg-${bgColor} text-${color} py-2 px-4 rounded hover:bg-blue-300 ${extraStyle}`}>
                 {name}
             </button>
         )

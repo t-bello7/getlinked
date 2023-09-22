@@ -14,7 +14,9 @@ export default {
         'darkBlue': '#150E28',
       },
       fontFamily:{
-        clashDisplay: ["clash-display"]
+        clashDisplay: ["clash-display"],
+        montserratItalic: ["montserratItalic"],
+        unicaOne: ["unicaOne"]
       }
     },
   },
