@@ -11,11 +11,12 @@ export default {
       colors: {
         'lightPurple': '#D434FE',
         'darkPurple': '#903AFF',
+        'darkPink': '#FF26B9',
         'darkBlue': '#150E28',
       },
       fontFamily:{
         clashDisplay: ["clash-display"],
-        montserratItalic: ["montserratItalic"],
+        montserrat: ["montserrat"],
         unicaOne: ["unicaOne"]
       }
     },

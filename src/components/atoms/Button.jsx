@@ -16,7 +16,7 @@ const Button = ({
 
             default:
                 return (
-            <button className={`bg-${bgColor} text-${color} py-2 px-4 rounded hover:bg-blue-300 ${extraStyle}`}>
+            <button className={`bg-lightPurple text-${color} py-2 px-4 rounded hover:bg-blue-300 capitalize ${extraStyle}`}>
                 {name}
             </button>
         )

@@ -4,9 +4,7 @@ import { gsap } from 'gsap'
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
 import Navbar from './components/Navbar'
 import Jumbotron from './components/Jumbtron'
-import CampaignSection from './components/CampaignSection'
-import TeamSection from './components/TeamSection'
-import Footer from './components/Footer'
+import OverviewSection from './components/OverViewSection'
 import './App.css'
 
 const keyCodes = {
@@ -17,7 +15,7 @@ const keyCodes = {
 const HomePage = () => {
   const { width: screenWidth, height: screenHeight } = useScreenDimensions();
   const jumbotronRef = useRef(null)
-  const campaignSectionRef = useRef(null)
+  const overviewSectionRef = useRef(null)
   const teamSectionRef = useRef(null)
   const containerRef = useRef(null)
   const [ isAnimating, setIsAnimating ] = useState(false)
@@ -74,11 +72,11 @@ const HomePage = () => {
     window.addEventListener("wheel", onMouseWheel)
   },[currentSlide])
   return (
-    <div ref={containerRef} className='relative bg-darkerColor text-lg overflow-scroll'>
+    <div ref={containerRef} className='relative bg-darkBlue text-white overflow-scroll'>
       <Navbar teamSectionRef={teamSectionRef} />
       <Jumbotron innerRef={jumbotronRef} />
-      {/* <CampaignSection innerRef={campaignSectionRef} />
-      <TeamSection innerRef={teamSectionRef}/>
+      <OverviewSection />
+      {/* <TeamSection innerRef={teamSectionRef}/>
       <Footer /> */}
     </div>
   )
