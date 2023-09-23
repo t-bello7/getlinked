@@ -10,7 +10,7 @@ import TimelineSection from './components/TimelineSection'
 import PrizeSection from './components/PrizeSection'
 import PartnerSection from './components/PartnerSection'
 import PrivacySection from './components/PrivacySection'
-// importF
+import FooterSection from './components/FooterSection'
 
 const keyCodes = {
   UP: 38,
@@ -86,7 +86,7 @@ const HomePage = () => {
       <PrizeSection />
       <PartnerSection />
       <PrivacySection />
-      <Footer />
+      <FooterSection />
     </div>
   )
 }
