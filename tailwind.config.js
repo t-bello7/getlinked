@@ -14,7 +14,8 @@ export default {
         'darkPurple': '#903AFF',
         'darkPink': '#FF26B9',
         'darkBlue': '#150E28',
-        'gray': '##FFFFFF3F '
+        'gray': '##FFFFFF3F',
+        'gray100': 'rgba(255, 255, 255, 0.18)'
       },
       fontFamily:{
         clashDisplay: ["clash-display"],

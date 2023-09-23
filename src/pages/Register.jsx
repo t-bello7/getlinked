@@ -1,14 +1,19 @@
 import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 import { Modal } from "antd"
 import Button from "../components/atoms/Button"
+import backIcon from "../assets/icons/back-icon.svg"
 import computerGuyImg from "../assets/imgs/computer-guy.png"
 import successfulManImg from "../assets/imgs/successful-man.png"
 import successfullyDoneImg from "../assets/imgs/successfully-done.png"
 import guyWalkingImg from "../assets/imgs/guy-walking.png"
 import girlWalkingImg from "../assets/imgs/girl-walking.png"
 
-
 const Register = () => {
+    const navigate = useNavigate();
+	const goBack = () => {
+		navigate(-1);
+	}
     const [isModalOpen, setIsModalOpen] = useState(false)
     const showModal = () => {
         setIsModalOpen(true);
@@ -20,6 +25,8 @@ const Register = () => {
     return(
     <div className="bg-darkBlue h-full text-white grid font-montserrat">
         <div className="container mx-auto max-w-[80%]">
+        <Button iconPath={backIcon} variant="icon" extraStyle="mt-11" onClick={goBack}/>
+
         <h3 className="text-lightPurple font-semibold font-3xl mt-11"> Register </h3>
         <img src={computerGuyImg} alt="computer-guy-image" className="aspect-[4/5] mt-8"/>
         
@@ -55,7 +62,7 @@ const Register = () => {
                     <div className="grid">
                         <label for="cars">Category</label>
 
-                        <select name="cars" id="cars" className="bg-transparent border rounded border-white px-6 py-3 placeholder:text-gray">
+                        <select name="cars" id="cars" className="bg-transparent border rounded border-white px-6 py-3">
                             <option value="volvo">Select your category</option>
                             <option value="saab">Saab</option>
                             <option value="mercedes">Mercedes</option>
@@ -65,7 +72,7 @@ const Register = () => {
                     <div className="grid">
                         <label for="cars">Group Size</label>
 
-                            <select name="cars" id="cars" className="bg-transparent border rounded border-white px-6 py-3 placeholder:text-gray">
+                            <select name="cars" id="cars" className="bg-transparent border rounded border-white px-6 py-3">
                                 <option value="volvo">Select your category</option>
                                 <option value="saab">Saab</option>
                                 <option value="mercedes">Mercedes</option>
