@@ -1,3 +1,4 @@
+import { useState } from "react"
 import { Modal } from "antd"
 import Button from "../components/atoms/Button"
 import computerGuyImg from "../assets/imgs/computer-guy.png"
@@ -6,7 +7,16 @@ import successfullyDoneImg from "../assets/imgs/successfully-done.png"
 import guyWalkingImg from "../assets/imgs/guy-walking.png"
 import girlWalkingImg from "../assets/imgs/girl-walking.png"
 
+
 const Register = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false)
+    const showModal = () => {
+        setIsModalOpen(true);
+      };
+      const handleCancel = () => {
+        setIsModalOpen(false);
+      };
+
     return(
     <div className="bg-darkBlue h-full text-white grid font-montserrat">
         <div className="container mx-auto max-w-[80%]">
@@ -73,13 +83,24 @@ const Register = () => {
                     and privacy policy
                     </span>
                 </div>
-            <Button name="submit" extraStyle="block self-center w-fit "/>
 
             </form>
+            <Button name="submit" extraStyle="block self-center w-fit" onClick={showModal}/>
+
         </div>
         </div>
-        <Modal>
-            heo
+        <Modal className="grid bg-transparent"
+            open={isModalOpen}
+            onCancel={handleCancel}
+            footer={null}
+            >
+            <div className="relative w-[70%] aspect-[1/1]">
+                <img src={successfullyDoneImg} alt="successfully-done-image" className="absolute" />
+                <img src={successfulManImg} alt="successfully-done-image" className="absolute" />
+            </div>
+            <h3> Congratulations you have successfully Registered! </h3>
+            <p> Yes, it was easy and you did it! check your mail box for next step </p>
+            <Button name="Back" extraStyle="w-full" onClick={handleCancel} />
         </Modal>
     </div>
 )}
