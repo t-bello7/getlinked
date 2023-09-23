@@ -18,7 +18,6 @@ const keyCodes = {
 }
 
 const HomePage = () => {
-  const { width: screenWidth, height: screenHeight } = useScreenDimensions();
   const jumbotronRef = useRef(null)
   const overviewSectionRef = useRef(null)
   const timelineSectionRef = useRef(null)
@@ -82,9 +81,6 @@ const HomePage = () => {
     window.addEventListener("wheel", onMouseWheel)
   },[currentSlide])
 
-  // timeline
-  // faq
-  // overview
   return (
     <div ref={containerRef} className='relative bg-darkBlue text-white overflow-scroll'>
       <Navbar scrollRoutes={scrollRoutes} />

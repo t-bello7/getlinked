@@ -9,7 +9,7 @@ import CloseIcon from "../assets/icons/close-icon.svg"
 const navlinks = [
   {
     url: "/contact",
-    name: "contact"
+    name: "Contact"
   },
 ]
 const Navbar = ({scrollRoutes}) => {
@@ -33,7 +33,7 @@ const Navbar = ({scrollRoutes}) => {
             <li className='mb-2 pt-2 pb-2' data-id="faq" onClick={handleScroll}> FAQs </li>
             {
               navlinks.map((item, index) => (
-              <li key={index} className='mb-2 pt-2 pb-2 uppercase hover:text-slate-300' >
+              <li key={index} className='mb-2 pt-2 pb-2 hover:text-slate-300' >
                 <Link to={item.url}>{ item.name }</Link>
               </li>
               ))

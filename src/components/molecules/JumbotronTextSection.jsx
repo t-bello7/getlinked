@@ -9,7 +9,7 @@ const JumbotronTextSection = () => {
             <p className="text-center mt-[2vh]"> Participate in getlinked tech Hackathon 2023 stand a chance to win a Big prize </p>
             <Button name="Register" extraStyle={"my-6   "} />
             <div className="flex w-60 justify-around">
-                <div className="flex items-end">
+                <div className="flex items-end align-baseline">
                     <span className="text-5xl font-unicaOne">
                         00
                     </span>
