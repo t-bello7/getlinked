@@ -3,17 +3,17 @@ import SectionHeader from "../atoms/SectionHeader";
 
 const OverviewContainer = ({
     imgPath,
-    overviewData
+    overviewData,
+    direction
 }) => {
-
     return (
-    <div className="flex flex-col items-center pt-[12vh]">
-        <div className="">
+    <div className="grid justify-items-center pt-[12vh] md:grid-cols-2 md:items-center">
+        <div className={`${direction === 'rtl' ? 'order-last': ''} `}>
             <img src={imgPath}  alt={`${overviewData.title}-image`} />
         </div>
-        <div className="text-center mt-14">
+        <div className="text-center mt-14 md:text-left">
             <SectionHeader title={overviewData.title} subTitle={overviewData.subTitle}/>
-            <div className="mt-2 font-montserrat">
+            <div className="mt-2 font-montserrat md:text-[14px]">
                 {
                     Array.isArray(overviewData.content) ?
                     (
