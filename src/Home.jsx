@@ -8,6 +8,7 @@ import OverviewSection from './components/OverViewSection'
 import FaqSection from './components/FaqSection'
 import TimelineSection from './components/TimelineSection'
 import PrizeSection from './components/PrizeSection'
+import PartnerSection from './components/PartnerSection'
 
 import './App.css'
 
@@ -83,6 +84,7 @@ const HomePage = () => {
       <FaqSection />
       <TimelineSection />
       <PrizeSection />
+      <PartnerSection />
     </div>
   )
 }

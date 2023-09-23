@@ -6,7 +6,7 @@ import bronzeMedalImage from "../assets/imgs/bronze-medal.png"
 
 const PrizeSection = () => {
     return (
-        <div className="container mx-auto max-w-[80%] my-10"> 
+        <div className="container mx-auto max-w-[80%] my-10 grid justify-items-center"> 
             <div className="text-center">
                 <SectionHeader title="Prizes and " subTitle="Rewards" />
                 <p>
@@ -15,22 +15,22 @@ const PrizeSection = () => {
                 </p>
             </div>
             <img src={winnerCupImage} alt="winner cup image" className="py-12"/>
-            <div className="flex my-24">
-                <div className="text-center w-[30%] aspect-[1/2] border border-lightPurple rounded-lg relative">
-                    <div className="absolute top-[50%] h-[40px] translate-y-[-50%] left-[50%] translate-x-[-50%]">
+            <div className="my-24 w-[100%] grid grid-cols-3 ">
+                <div className="text-center aspect-[1/2] border border-lightPurple rounded-lg relative">
+                    <div className="absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]">
                         <span className="text-lightPurple">2nd <br/> Runner</span> <br/>
                         <span className="text-lightPurple"> N300,000 </span>
                     </div>
                     <img src={silverMedalImage} alt="silver medal image" className="absolute left-[50%] translate-x-[-50%] top-[-30%]" />
                 </div>
-                <div className="text-center w-[30%] aspect-[1/2] border border-lightPurple rounded-lg relative">
-                    <div className="absolute top-[50%] h-[40px] translate-y-[-50%] left-[50%] translate-x-[-50%]">
+                <div className="text-center aspect-[1/2] border border-lightPurple rounded-lg relative">
+                    <div className="absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]">
                         <span className="text-lightPurple">2nd <br/> Runner</span> <br/>
                         <span className="text-lightPurple"> N300,000 </span>
                     </div>
                     <img src={goldMedalImage} alt="silver medal image" className="absolute left-[50%] translate-x-[-50%] top-[-60%]" />
                 </div>
-                <div className="text-center w-[30%] aspect-[1/2] border border-lightPurple rounded-lg relative">
+                <div className="text-center aspect-[1/2] border border-lightPurple rounded-lg relative">
                     <div className="absolute top-[50%] h-[40px] translate-y-[-50%] left-[50%] translate-x-[-50%]">
                         <span className="text-lightPurple">2nd <br/> Runner</span> <br/>
                         <span className="text-lightPurple"> N300,000 </span>
