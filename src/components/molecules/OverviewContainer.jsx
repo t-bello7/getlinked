@@ -1,4 +1,5 @@
 import Button from "../atoms/Button"
+import SectionHeader from "../atoms/SectionHeader";
 
 const OverviewContainer = ({
     imgPath,
@@ -11,10 +12,7 @@ const OverviewContainer = ({
             <img src={imgPath}  alt={`${overviewData.title}-image`} />
         </div>
         <div className="text-center mt-14">
-            <h3 className="font-clashDisplay font-bold text-xl">
-                <span> {overviewData.title} </span> <br />
-                <span className="text-lightPurple"> {overviewData.subTitle} </span>
-            </h3>
+            <SectionHeader title={overviewData.title} subTitle={overviewData.subTitle}/>
             <p className="mt-2 font-montserrat">
                 {
                     Array.isArray(overviewData.content) ?

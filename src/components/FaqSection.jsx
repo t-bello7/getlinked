@@ -1,4 +1,5 @@
 import { Collapse } from 'antd';
+import SectionHeader from './atoms/SectionHeader';
 import thinkingMan from '../assets/imgs/thinking-man.png';
 
 const text = `
@@ -43,12 +44,14 @@ const items = [
 
 const FaqSection = () => {
     return  (
-        <div className="container mx-auto max-w-[80%] mt-[12vh]">\
-            <div>
-                <h3 className="capitalize text-center font-clashDisplay font-bold text-xl"> 
-                    <span> Frequently Ask </span> <br/>
-                    <span className="text-lightPurple"> Question</span>
+        <div className="container mx-auto max-w-[80%] mt-[12vh]">
+            <div className='text-center'>
+                <h3 className="capitalize font-clashDisplay font-bold text-xl"> 
+                    <span>  </span> <br/>
+                    <span className="text-lightPurple"> </span>
                 </h3>
+                <SectionHeader title="Frequently Ask" subTitle="Question" />
+
                 <p>
                     We got answers to the questions that you might
                     want to ask about getlinked Hackathon 1.0

@@ -5,6 +5,10 @@ import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
 import Navbar from './components/Navbar'
 import Jumbotron from './components/Jumbtron'
 import OverviewSection from './components/OverViewSection'
+import FaqSection from './components/FaqSection'
+import TimelineSection from './components/TimelineSection'
+import PrizeSection from './components/PrizeSection'
+
 import './App.css'
 
 const keyCodes = {
@@ -75,9 +79,10 @@ const HomePage = () => {
     <div ref={containerRef} className='relative bg-darkBlue text-white overflow-scroll'>
       <Navbar teamSectionRef={teamSectionRef} />
       <Jumbotron innerRef={jumbotronRef} />
-      <OverviewSection />
-      {/* <TeamSection innerRef={teamSectionRef}/>
-      <Footer /> */}
+      <OverviewSection innerRef={overviewSectionRef}/>
+      <FaqSection />
+      <TimelineSection />
+      <PrizeSection />
     </div>
   )
 }
