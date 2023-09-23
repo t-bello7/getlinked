@@ -1,42 +1,47 @@
 import { Collapse } from 'antd';
 import SectionHeader from './atoms/SectionHeader';
 import thinkingMan from '../assets/imgs/thinking-man.png';
+import plusIcon from '../assets/icons/plus.svg'
+import minusIcon from '../assets/icons/minus.svg'
+
+const FaqHeader = ({name}) => (<h4 className='text-white '>{name}</h4>)
+
+const FaqText = ({name}) => (<p className='text-white'>{name}</p>)
 
 const text = `
-  A dog is a type of domesticated animal.
-  Known for its loyalty and faithfulness,
-  it can be found as a welcome guest in many households across the world.
+We got answers to the questions that you might
+want to ask about getlinked Hackathon 1.0
 `;
 const items = [
   {
     key: '1',
-    label: 'Can I work on a project I started before the hackathon?',
-    children: <p>{text}</p>,
+    label: <FaqHeader name="Can I work on a project I started before the hackathon?"/>,
+    children: <FaqText name={text}/>,
   },
   {
     key: '2',
-    label: 'What happens if I need help during the hackathon?',
-    children: <p>{text}</p>,
+    label: <FaqHeader name="What happens if I need help during the hackathon?" />,
+    children: <FaqText name={text} />,
   },
   {
     key: '3',
-    label: "What happens if I don't have an idea for a project?",
-    children: <p>{text}</p>,
+    label: <FaqHeader name="What happens if I don't have an idea for a project?" />,
+    children: <FaqText name={text} />
   },
   {
     key: '4',
-    label: "Can I join a team or do I have to come with one?",
-    children: <p>{text}</p>,
+    label: <FaqHeader name="Can I join a team or do I have to come with one?" />,
+    children: <FaqText name={text} />
   },
   {
     key: '5',
-    label: "What happens after the hackathon ends",
+    label: <FaqHeader name="What happens after the hackathon ends" />,
     children: <p>{text}</p>,
   },
   {
     key: '6',
-    label: "Can I work on a project I started before the hackathon?",
-    children: <p>{text}</p>,
+    label: <FaqHeader name="Can I work on a project I started before the hackathon?" />,
+    children: <FaqText name={text} />
   },
   
 ];
@@ -44,19 +49,25 @@ const items = [
 
 const FaqSection = ({innerRef}) => {
     return  (
-        <div ref={innerRef} className="container mx-auto max-w-[80%] mt-[12vh]">
-            <div className='text-center'>
+        <div ref={innerRef} className="container mx-auto max-w-[90%] mt-[12vh] grid md:grid-cols-2 md:items-center">
+            <div className='text-center md:text-left'>
                 <h3 className="capitalize font-clashDisplay font-bold text-xl"> 
                     <span>  </span> <br/>
                     <span className="text-lightPurple"> </span>
                 </h3>
                 <SectionHeader title="Frequently Ask" subTitle="Question" />
 
-                <p>
+                <p className='mt-4'>
                     We got answers to the questions that you might
                     want to ask about getlinked Hackathon 1.0
                 </p>
-                <Collapse items={items} defaultActiveKey={['1']} className='my-11'/>
+                <Collapse
+                  items={items}
+                  className='my-11 [&_.ant-collapse-item]:border-b-lightPurple'
+                  bordered={false}
+                  expandIconPosition='end'
+                  expandIcon = {({isActive}) => ( isActive ?  <img src={minusIcon} alt='minus-icon' /> : <img src={plusIcon} alt='plus icon' />)}
+                  />
             </div>
             <img src={thinkingMan} alt="thinking man image"/>
         </div>)

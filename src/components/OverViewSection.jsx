@@ -80,7 +80,7 @@ const overviewData = [
 const OverviewSection = ({innerRef}) => {
     return (
         <div ref={innerRef} className="container mx-auto max-w-[90%] flex flex-col">
-        {overviewData.map(item => <OverviewContainer key={item.key} imgPath={item.imgPath} overviewData={item.overviewData} direction={item.direction} />)}
+            {overviewData.map(item => <OverviewContainer key={item.key} imgPath={item.imgPath} overviewData={item.overviewData} direction={item.direction} />)}
         </div>
 )
 }
