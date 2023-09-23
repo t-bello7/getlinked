@@ -1,10 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import DashBoard from './pages/Dashboard.jsx'
 import ErrorPage from './pages/ErrorPage.jsx'
 import HomePage from './Home.jsx'
+import Contact from './pages/Contact.jsx'
 import './index.css'  
+import Register from './pages/Register.jsx'
 
 const router = createBrowserRouter([
   {
@@ -13,10 +14,13 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />
   },
   {
-    path: "/donations",
-    element: <DashBoard />
+    path: "/contact",
+    element: <Contact />
+  },
+  {
+    path: "/register",
+    element: <Register />
   }
-
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

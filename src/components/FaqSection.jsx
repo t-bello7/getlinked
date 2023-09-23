@@ -42,9 +42,9 @@ const items = [
 ];
 
 
-const FaqSection = () => {
+const FaqSection = ({innerRef}) => {
     return  (
-        <div className="container mx-auto max-w-[80%] mt-[12vh]">
+        <div ref={innerRef} className="container mx-auto max-w-[80%] mt-[12vh]">
             <div className='text-center'>
                 <h3 className="capitalize font-clashDisplay font-bold text-xl"> 
                     <span>  </span> <br/>

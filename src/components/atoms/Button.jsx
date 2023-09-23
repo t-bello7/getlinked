@@ -5,18 +5,19 @@ const Button = ({
     variant="button",
     iconPath="",
     defaultStyle="cursor-pointer",
-    extraStyle
+    extraStyle,
+    onClick
     }) => {
         switch (variant) {
             case "icon":
             return (
-            <div className={`g p-2 rounded-sm z-50 md:hidden`} >
+            <button className={`${defaultStyle} p-2 rounded-sm z-50 md:hidden`} onClick={onClick}>
                 <img src={iconPath} alt={`${name}-icon`}/>
-            </div>)
+            </button>)
 
             default:
                 return (
-            <button className={`bg-lightPurple text-${color} py-2 px-4 rounded hover:bg-blue-300 capitalize ${extraStyle}`}>
+            <button className={`bg-${bgColor} text-${color} py-2 px-4 rounded hover:bg-blue-300 capitalize ${defaultStyle} ${extraStyle}`} onClick={onClick}>
                 {name}
             </button>
         )

@@ -1,8 +1,8 @@
 import { Timeline } from 'antd';
 
-const TimelineSection = () => {
+const TimelineSection = ({innerRef}) => {
     return (
-        <div className="container mx-auto max-w-[80%] mt-[12vh]">
+        <div ref={innerRef} className="container mx-auto max-w-[80%] mt-[12vh]">
             <h3 className="text-center font-clashDisplay font-bold text-xl"> Timeline </h3>
             <p className="text-center text-sm font-montserrat">
             Here is the breakdown of the time we anticipate using for the upcoming event.

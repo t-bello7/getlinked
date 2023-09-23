@@ -21,14 +21,19 @@ const HomePage = () => {
   const { width: screenWidth, height: screenHeight } = useScreenDimensions();
   const jumbotronRef = useRef(null)
   const overviewSectionRef = useRef(null)
-  const teamSectionRef = useRef(null)
+  const timelineSectionRef = useRef(null)
+  const faqSectionRef = useRef(null)
   const containerRef = useRef(null)
   const [ isAnimating, setIsAnimating ] = useState(false)
   const [currentSlide, setCurrentSlide] = useState(1)
-  
+
+  const scrollRoutes = {
+    timeline: timelineSectionRef,
+    overview: overviewSectionRef,
+    faq: faqSectionRef
+  }
   useEffect(() => {
     const slidesContainerArr = containerRef.current.children
-    let slidesContainerLen = containerRef.current.children.length
 
     const onKeyDown = (event) => {
       let PRESSED_KEY = event.keyCode;
@@ -76,13 +81,17 @@ const HomePage = () => {
     window.addEventListener("keydown", onKeyDown)
     window.addEventListener("wheel", onMouseWheel)
   },[currentSlide])
+
+  // timeline
+  // faq
+  // overview
   return (
     <div ref={containerRef} className='relative bg-darkBlue text-white overflow-scroll'>
-      <Navbar teamSectionRef={teamSectionRef} />
+      <Navbar scrollRoutes={scrollRoutes} />
       <Jumbotron innerRef={jumbotronRef} />
-      <OverviewSection innerRef={overviewSectionRef}/>
-      <FaqSection />
-      <TimelineSection />
+      <OverviewSection innerRef={overviewSectionRef} />
+      <FaqSection innerRef={faqSectionRef} />
+      <TimelineSection innerRef={timelineSectionRef} />
       <PrizeSection />
       <PartnerSection />
       <PrivacySection />

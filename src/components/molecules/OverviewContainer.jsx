@@ -13,7 +13,7 @@ const OverviewContainer = ({
         </div>
         <div className="text-center mt-14">
             <SectionHeader title={overviewData.title} subTitle={overviewData.subTitle}/>
-            <p className="mt-2 font-montserrat">
+            <div className="mt-2 font-montserrat">
                 {
                     Array.isArray(overviewData.content) ?
                     (
@@ -35,7 +35,7 @@ const OverviewContainer = ({
                         overviewData.content
                     )
                 }
-            </p>
+            </div>
         </div> 
     </div>
 )}
