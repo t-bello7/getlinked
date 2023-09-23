@@ -7,61 +7,63 @@ import locationIcon from "../assets/icons/location-icon.svg"
 
 const FooterSection = () => {
     return (
-        <div className="py-4 container mx-auto max-w-[80%] grid justify-items-start gap-y-8 font-montserrat text-xs">
-            <div>
-                <h3 className="font-clashDisplay font-bold">
-                    <span className='font-bold text-white'>get</span><span className='text-lightPurple'>linked</span>
-                </h3>
-                <p className="">
-                    Getlinked Tech Hackathon is a technology
-                    innovation program established by a group 
-                    of organizations with the aim of showcasing 
-                    young and talented individuals in the field 
-                    of technology
-                </p>
+        <div className="bg-darkBlue100 py-12">
+            <div className="py-4 container mx-auto max-w-[80%] grid justify-items-start gap-y-8 font-montserrat text-xs md:grid-cols-3">
                 <div>
-                    <span>
-                    Terms of Use       Privacy Policy
-                    </span>
+                    <h3 className="font-clashDisplay font-bold">
+                        <span className='font-bold text-white'>get</span><span className='text-lightPurple'>linked</span>
+                    </h3>
+                    <p className="">
+                        Getlinked Tech Hackathon is a technology
+                        innovation program established by a group 
+                        of organizations with the aim of showcasing 
+                        young and talented individuals in the field 
+                        of technology
+                    </p>
+                    <div>
+                        <span>
+                        Terms of Use &copy; Privacy Policy
+                        </span>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <h3> Useful Links </h3>
-                <ul>
-                    <li> Overview </li>
-                    <li> Timeline </li>
-                    <li> FAQs </li>
-                    <li className="flex"> 
-                        <span> Follow us </span>
-                        <img src={instagramIcon} alt="instagram icon " />
-                        <img src={twitterIcon} alt="twitter icon " />
-                        <img src={faceBookIcon} alt="facebook icon " />
-                        <img src={linkedInIcon} alt="linkedin icon " />
-                    </li>
+                <div>
+                    <h3 className="font-bold text-lightPurple capitalize"> Useful Links </h3>
+                    <ul>
+                        <li> Overview </li>
+                        <li> Timeline </li>
+                        <li> FAQs </li>
+                        <li className="flex"> 
+                            <span> Follow us </span>
+                            <img src={instagramIcon} alt="instagram icon " />
+                            <img src={twitterIcon} alt="twitter icon " />
+                            <img src={faceBookIcon} alt="facebook icon " />
+                            <img src={linkedInIcon} alt="linkedin icon " />
+                        </li>
 
-                </ul>
-            </div>
-            <div>
-                <h3> Contact Us </h3>
-                <ul>
-                    <li> 
-                        <span>
-                            <img src={callIcon} alt="call icon" />
-                            <span> +234 679 81819 </span>
-                        </span>
-                        <span>
-                            <img src={locationIcon} alt="location icon" />
-                        <span>
-                            27,Alara Street
-                            Yaba 100012
-                            Lagos State
-                        </span>
-                        </span>
-                    </li>
-                </ul>
-            </div>
-            <div>
-            All rights reserved. © getlinked Ltd.
+                    </ul>
+                </div>
+                <div>
+                    <h3 className="font-bold text-lightPurple capitalize"> Contact Us </h3>
+                    <ul>
+                        <li> 
+                            <span>
+                                <img src={callIcon} alt="call icon" />
+                                <span> +234 679 81819 </span>
+                            </span>
+                            <span>
+                                <img src={locationIcon} alt="location icon" />
+                            <span>
+                                27,Alara Street
+                                Yaba 100012
+                                Lagos State
+                            </span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                All rights reserved. © getlinked Ltd.
+                </div>
             </div>
         </div>
     )
