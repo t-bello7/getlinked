@@ -1,5 +1,87 @@
+import { Modal } from "antd"
+import Button from "../components/atoms/Button"
+import computerGuyImg from "../assets/imgs/computer-guy.png"
+import successfulManImg from "../assets/imgs/successful-man.png"
+import successfullyDoneImg from "../assets/imgs/successfully-done.png"
+import guyWalkingImg from "../assets/imgs/guy-walking.png"
+import girlWalkingImg from "../assets/imgs/girl-walking.png"
+
 const Register = () => {
-    return <div> Register </div>
-}
+    return(
+    <div className="bg-darkBlue h-full text-white grid font-montserrat">
+        <div className="container mx-auto max-w-[80%]">
+        <h3 className="text-lightPurple font-semibold font-3xl mt-11"> Register </h3>
+        <img src={computerGuyImg} alt="computer-guy-image" className="aspect-[4/5] mt-8"/>
+        
+        
+        <div>
+            <div>
+                <span className="flex items-end text-xs"> Be part of this movement!
+                    <span className="border-b flex w-[90px] items-end border-dashed justify-center border-lightPurple">
+                        <img src={girlWalkingImg} alt="girl-walking" className="h-6 scale-x-[-1]" />
+                        <img src={guyWalkingImg} alt="guy-walking" className="h-7 scale-x-[-1]" />
+                    </span>
+                </span>
+                <h3 className="uppercase mt-1.7 text-xl"> Create you account</h3>
+            </div>
+            <form className="space-y-4 mt-6 text-sm">
+                <div className="grid">
+                    <span> Team's Name </span>
+                    <input  placeholder="Enter the name of your group" className="bg-transparent border rounded border-white px-6 py-3 placeholder:text-gray"/>
+                </div>
+                <div className="grid">
+                    <span> Phone </span>
+                    <input  placeholder="Enter your phone number" className="bg-transparent border rounded border-white px-6 py-3 placeholder:text-gray"/>
+                </div>
+                <div className="grid">
+                    <span> Email </span>
+                    <input  placeholder="Enter your email address" className="bg-transparent border rounded border-white px-6 py-3 placeholder:text-gray"/>
+                </div>
+                <div className="grid">
+                    <span> Project Topic </span>
+                    <input  placeholder="What is your group project topic" className="bg-transparent border rounded border-white px-6 py-3 placeholder:text-gray"/>
+                </div>
+                <div className="grid grid-cols-2 gap-5">
+                    <div className="grid">
+                        <label for="cars">Category</label>
+
+                        <select name="cars" id="cars" className="bg-transparent border rounded border-white px-6 py-3 placeholder:text-gray">
+                            <option value="volvo">Select your category</option>
+                            <option value="saab">Saab</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                        </select> 
+                    </div>
+                    <div className="grid">
+                        <label for="cars">Group Size</label>
+
+                            <select name="cars" id="cars" className="bg-transparent border rounded border-white px-6 py-3 placeholder:text-gray">
+                                <option value="volvo">Select your category</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select> 
+                    </div>
+                </div>
+                <span className="text-darkPink text-[9px] italic">
+                    Please review your registration details before submitting
+                </span>
+                <div className="flex items-start gap-2">
+                    <input type="checkbox" name="" id="" />
+                    <span className="text-[10px] ">
+                    I agreed with the event terms and conditions <br />
+                    and privacy policy
+                    </span>
+                </div>
+            <Button name="submit" extraStyle="block self-center w-fit "/>
+
+            </form>
+        </div>
+        </div>
+        <Modal>
+            heo
+        </Modal>
+    </div>
+)}
 
 export default Register;

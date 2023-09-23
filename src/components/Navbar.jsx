@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { Link } from "react-router-dom";
 import { gsap } from 'gsap';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
@@ -38,7 +38,7 @@ const Navbar = ({scrollRoutes}) => {
               </li>
               ))
             }
-            <Button name="Register"/>
+            <Link to="/register"><Button name="Register"/> </Link>
           </ul>
         </div>
     </div>
