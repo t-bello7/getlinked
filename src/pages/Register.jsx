@@ -24,7 +24,7 @@ const Register = () => {
       };
 
     return(
-    <div className="bg-darkBlue h-full text-white grid font-montserrat">
+    <div className="bg-darkBlue h-[100vh] text-white grid font-montserrat">
         <div className="hidden md:block">
             <Navbar />
         </div>
