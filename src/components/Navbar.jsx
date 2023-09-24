@@ -20,7 +20,7 @@ const Navbar = ({scrollRoutes}) => {
     gsap.to(window, {duration: 1, scrollTo: scrollRoutes[event.target.dataset.id].current});  
   }
   return (
-    <div className={`bg-transparent border-b border-b-lightPurple p-7 fixed z-10 container mx-auto flex justify-between items-center 
+    <div className={`bg-transparent border-b border-b-lightPurple p-7 fixed md:static z-10 container mx-auto flex justify-between items-center 
                       md:p-7 md:max-w-[80%] md:border-b-gray100`}>
       <div className="font-clashDisplay font-bold md:w-[50%]">
         <span className='font-bold text-white'>get</span><span className='text-lightPurple'>linked</span>
