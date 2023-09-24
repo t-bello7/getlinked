@@ -1,20 +1,12 @@
 import Button from "../atoms/Button"
 import chainIcon from "../../assets/icons/chain.png"
 import creativeBulbIcon from "../../assets/icons/creative-bulb.png"
-import curvelineImg from "../../assets/icons/curve-line.svg"
 import starBlastIcon from "../../assets/icons/star-blast.png"
 import vectorDesktopline from "../../assets/icons/vector-desk.svg"
 
 const JumbotronTextSection = () => {
     return (
         <div className="bg-darkColor px-[2ch] text-white flex flex-col items-center justify-center relative md:w-[50%] md:items-start">
-            {/* <div
-            className="w-96 h-96 rounded-[50%] overflow-hidden blur-[56px]"
-            style={{
-              background:
-                "radial-gradient(34.85% 34.85% at 50% 50%, rgba(245, 185, 255, 0.5) 0%, rgba(121, 255, 191, 0.125) 50.52%, rgba(187, 251, 255, 0.02) 100%)"
-            }}
-          ></div> */}
             <span className="font-montserrat font-bold italic text-base
                 md:absolute md:top-0 md:right-[-80%] md:text-3xl">
                 <span>
@@ -22,7 +14,8 @@ const JumbotronTextSection = () => {
                 </span>
                 <img src={vectorDesktopline} alt="curve line" className="absolute left-[60%] w-[100px] md:w-[255px]"/>
             </span>
-            <h1 className="font-bold text-3xl text-center font-clashDisplay mt-[8vh] md:text-[80px] md:leading-none md:text-left"> getlinked Tech <br/> 
+            <h1 className="font-bold text-3xl text-center font-clashDisplay mt-[8vh] md:text-[80px] md:leading-none md:text-left relative"> getlinked Tech <br/>
+            <img src={creativeBulbIcon} alt="creative-bulb" className="absolute top-[-25%] left-[80%] w-[20px] md:w-[50px] md:left-[71%] md:top-[-35%]"/> 
                 <span className="flex items-center">
                     Hackathon
                     <span className="text-lightPurple">1.0 </span>  
