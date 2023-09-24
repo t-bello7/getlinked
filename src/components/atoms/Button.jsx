@@ -17,7 +17,12 @@ const Button = ({
 
             default:
                 return (
-            <button className={`py-2 px-4 rounded hover:bg-blue-300 capitalize bg-lightPurple text-${color}  ${defaultStyle} ${extraStyle}`} onClick={onClick}>
+            <button className={`py-2 px-4 rounded hover:scale-125 capitalize text-${color}  ${defaultStyle} ${extraStyle}`}
+                onClick={onClick}
+                style={{
+                    background: 'linear-gradient(270deg, #903AFF 0%, #FE34B9 100%)' 
+                }}
+                >
                 {name}
             </button>
         )

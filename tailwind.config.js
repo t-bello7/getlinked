@@ -13,6 +13,7 @@ export default {
         'lightPurple': '#D434FE',
         'darkPurple': '#903AFF',
         'darkPink': '#FF26B9',
+        'lightBlue': '#FE34B9',
         'darkBlue': '#150E28',
         'darkBlue100': '#100B20',
         'gray': '##FFFFFF3F',
