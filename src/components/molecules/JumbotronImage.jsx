@@ -1,5 +1,8 @@
 import connectWorldImg from "../../assets/imgs/connect-world.png"
 import vrManImg from "../../assets/imgs/vr-man.png"
+import jumbotronBg2 from '../../assets/imgs/jumbotron-bg-2.png'
+import metricBg from '../../assets/imgs/metric-bg.png'
+
 const JumbotronImage = () => {
     return (
         <div className="md:w-[50%] mt-[9vh] md:block md:h-full relative">

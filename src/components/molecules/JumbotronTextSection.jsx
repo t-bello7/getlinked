@@ -2,13 +2,19 @@ import Button from "../atoms/Button"
 import chainIcon from "../../assets/icons/chain.png"
 import creativeBulbIcon from "../../assets/icons/creative-bulb.png"
 import starBlastIcon from "../../assets/icons/star-blast.png"
+import whiteStar from "../../assets/icons/white-star.png"
+import grayStar from "../../assets/icons/gray-star.png"
 import vectorDesktopline from "../../assets/icons/vector-desk.svg"
-
+import jumbotronBg1 from '../../assets/imgs/jumbotron-bg.png'
 const JumbotronTextSection = () => {
     return (
         <div className="bg-darkColor px-[2ch] text-white flex flex-col items-center justify-center relative md:w-[50%] md:items-start">
-            <span className="font-montserrat font-bold italic text-base
-                md:absolute md:top-0 md:right-[-80%] md:text-3xl">
+            <img src={grayStar} alt="gray-star" className="absolute md:left-[110%] md:top-0" />
+            <img src={grayStar} alt="gray-star" className="absolute left-[-30%] md:left-[65%] md:bottom-[10%]" />
+            <img src={whiteStar} alt="gray-star" className="absolute top-[15%] left-[28%] z-20 md:left-[11%] md:top-[-20%]" />
+            <img src={jumbotronBg1} alt="bg-img" className="absolute left-[-15%] top-[3%] z-10 md:top-[-55%] md:left-[10%]" />
+            <span className="font-montserrat font-bold italic text-base z-20
+                md:absolute md:top-[-25%] md:right-[-80%] md:text-3xl">
                 <span>
                     Igniting a Revolution in HR Innovation
                 </span>
@@ -26,7 +32,7 @@ const JumbotronTextSection = () => {
                 </span>
             </h1>
             <p className="text-center mt-[2vh] md:text-xl md:text-left"> Participate in getlinked tech Hackathon 2023 stand a chance to win a Big prize </p>
-            <Button name="Register" extraStyle={"my-6   "} />
+            <Button name="Register" extraStyle="my-6 w-[25%]" />
             <div className="flex w-60 justify-around">
                 <div className="flex items-end align-baseline">
                     <span className="text-5xl font-unicaOne md:text-7xl">
